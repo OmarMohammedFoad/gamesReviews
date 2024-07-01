@@ -1,0 +1,102 @@
+/*  */
+
+:root {
+    --background-color: 39, 43, 48;
+    --navbar-color: 58, 73, 123;
+    --badge-bg-color:50,52,62;
+    --navbar-link-color: 10,139,190;
+}
+
+body {
+    background-color: rgb(var(--background-color));
+    font-family: "Nerko One", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(var(--navbar-color), 0.8);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top:0;
+    left:200px;
+
+
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        background-color: rgba(var(--navbar-color), 0.8); 
+        width: 100%;
+        border-radius: 7.5px;
+        position: absolute;
+        top: 70px;
+        left: 2px;
+        text-align: center;
+        z-index: 1000;
+     }
+    
+}
+.navbar ul li a{
+    color:white; 
+  text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight:100;
+    font-size: 1.25rem;
+}
+.navbar ul li .first-link{
+    color:rgba(var(--navbar-link-color))}
+
+
+.navbar ul li a:hover{
+color:rgba(var(--navbar-link-color))}
+
+#cards {
+    .card {
+        background-color: rgba(var(--background-color), 0.8);
+        font-size: 1.2em;
+        cursor: pointer;
+
+    }
+    .card-container{
+        /* background-color: rgba(0,0,0, 0.8); */
+    }
+    .card .c-header .badge{
+        background-color: rgba(var(--navbar-color));
+    }
+    .card-footer{
+        font-size: 10.5px;
+        font-weight: bold;
+
+        
+    }
+
+    .card .card-footer .badge{
+        background-color: rgba(var(--badge-bg-color));
+        font-size: 10.5px;
+        font-weight: 100;
+        height: 7px;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    
+}
+
+.details{
+    background-color: rgba(var(--background-color), 0.8);
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 7.5px;
+    margin: 10px;
+    color: white;
+}
