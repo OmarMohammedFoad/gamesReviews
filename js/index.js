@@ -67,13 +67,13 @@ const displayOneGame = async (id)=>{
     gameDetails.innerHTML = `   <div class="col-md-5">
           <img src="${data.thumbnail}" class="w-100" alt="">
         </div>
-        <div class="col-md-6">
-          <h2> title : <span>${data.title}</span></h2>
-          <p>category : <span>${data.category}</span></p>
-          <p>platform : <span>${data.platform}</span></p>
-          <p>status : <span>${data.status}</span></p>
-          <p>description : <span>${data.short_description}</span></p>
-            <div class="col-md-6">
+        <div class="col-md-4">
+          <h2> title :  <span class="game-display-badge badge   h-25 p-2 text-center">${data.genre}</span></h2>
+          <p>category : <span class="game-display-badge badge   h-25 p-2 text-center">${data.platform}</span></p>
+          <p>platform :<span class="game-display-badge badge   h-25 p-2 text-center">${data.platform}</span></p>
+          <p>status :  <span class="game-display-badge badge   h-25 p-2 text-center">${data.status}</span></p>
+          <p>description :  <span>${data.short_description}</span></p>
+            <div class="col-md-8">
               <button  class="show-game btn btn-danger" >
               <a href="${data.game_url}" class="text-white text-decoration-none">Play Game</a>
               

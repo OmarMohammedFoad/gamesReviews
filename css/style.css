@@ -100,3 +100,7 @@ color:rgba(var(--navbar-link-color))}
     margin: 10px;
     color: white;
 }
+
+.game-display-badge{
+    background-color: rgba(var(--navbar-color));
+}
